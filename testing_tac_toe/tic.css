@@ -1,0 +1,65 @@
+body {
+	background-color: lightcyan;
+	text-align: center;
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 4em;
+	color: #333;
+	margin-top: 5vhpx;
+}
+
+#game {
+	display: inline-block;
+	margin-top: .5vh;
+    border: solid .3em ;
+    background-color: black;
+}
+
+.row {
+	display: flex;
+}
+
+.cell {
+    width: 15vw;
+    height: 20vh;
+    margin: .4vw;
+    border-radius: 10px;
+    background-color: lightgrey;
+    border: black solid .03em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 12em;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	cursor:crosshair;
+}
+
+  .cell:hover {
+    background-color: lightblue;
+  }
+  
+  
+#message {
+	font-family: Arial, sans-serif;
+	font-size: 4em;
+	color: #333;
+    padding-top: 1vh ;
+	margin-top: 20px;
+}
+
+#restart-btn {
+	background-color: #7033ff;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+#restart-btn:hover {
+	background-color: #cf33ff;
+}
