@@ -1,20 +1,32 @@
 body {
 	background-color: lightcyan;
 	text-align: center;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 1vh;
 }
 
 h1 {
 	font-family: Arial, sans-serif;
 	font-size: 4em;
 	color: #333;
-	margin-top: 5vhpx;
+	margin-top: 3vh;
 }
 
 #game {
-	display: inline-block;
-	margin-top: .5vh;
-    border: solid .3em ;
-    background-color: black;
+	border-radius: 5%;
+	border: solid 0.3em;
+	background-color: black;
+	padding: 1vh;
 }
 
 .row {
@@ -22,30 +34,29 @@ h1 {
 }
 
 .cell {
-    width: 15vw;
-    height: 20vh;
-    margin: .4vw;
-    border-radius: 10px;
-    background-color: lightgrey;
-    border: black solid .03em;
+	width: 20vw;
+	height: 20vw;
+	margin: 1vw;
+	border-radius: 10px;
+	background-color: lightgrey;
+	border: black solid 0.03em;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 12em;
-	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	cursor:crosshair;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	cursor: crosshair;
 }
 
-  .cell:hover {
-    background-color: lightblue;
-  }
-  
-  
+
+.cell:hover {
+	background-color: lightblue;
+}
+
 #message {
 	font-family: Arial, sans-serif;
-	font-size: 4em;
+	font-size: 3em;
 	color: #333;
-    padding-top: 1vh ;
+	padding-top: 1vh;
 	margin-top: 20px;
 }
 
@@ -54,12 +65,65 @@ h1 {
 	color: #fff;
 	border: none;
 	border-radius: 5px;
-	padding: 10px 20px;
-	font-size: 1.2em;
+	padding: 1vh 2vh;
+	font-size: 1.8rem;
 	cursor: pointer;
 	margin-top: 20px;
 }
 
 #restart-btn:hover {
 	background-color: #cf33ff;
+}
+
+@media (max-width: 576px) {
+	.cell {
+		width: 40vw;
+		height: 40vw;
+		margin: 4vw;
+		font-size: 4em;
+	}
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+	.cell {
+		width: 30vw;
+		height: 30vw;
+		margin: 3vw;
+		font-size: 10em;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.cell {
+		width: 15vw;
+		height: 15vw;
+		margin: 2vw;
+		font-size: 10em;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1220px) {
+	.cell {
+		width: 13vw;
+		height: 13vw;
+		margin: 1vw;
+		font-size: 10em;
+	}
+}
+@media (min-width: 1221px) and (max-width: 1500px) {
+	.cell {
+		width: 11vw;
+		height: 11vw;
+		margin: 1vw;
+		font-size: 10em;
+	}
+}
+
+@media (min-width: 1221px) {
+	.cell {
+		width: 8vw;
+		height: 8vw;
+		margin: 1vw;
+		font-size: 10em;
+	}
 }
