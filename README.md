@@ -1,1 +1,1 @@
-Simple, responsive 2 player tic tac toe game. 
+Responsive 2 player tic tac toe game. 
